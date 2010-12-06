@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Jasmine ZIP Code example</title>
+    <link href="stylesheets/zip-code.css" rel="stylesheet"/>
+  </head>
+<body>
+  <div class="message">Your zip code hasn't been set yet</div>
+  <button class="enter_zip" rel="#overlay">Enter your ZIP Code</button>
+  <div id="overlay">
+    <input name="zip" id="zip">
+    <button>Submit</button>
+  </div>
+
+  <script type="text/javascript" src="javascripts/lib/jquery-1.4.4.js"></script>
+  <script type="text/javascript" src="javascripts/lib/overlay.min.js"></script>
+  <script type="text/javascript" src="javascripts/lib/jquery.cookie.js"></script>
+  <script type="text/javascript" src="javascripts/zip-code.js"></script>
+  <script type="text/javascript">
+    $('.enter_zip').zipCode();
+  </script>
+</body>
+</html>

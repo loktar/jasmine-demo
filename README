@@ -1,1 +1,20 @@
-Sample Jasmine setup
+# Sample Jasmine setup
+#
+# Here are all the commands I ran to make this demo:
+
+mkdir jasmine-demo
+cd jasmine-demo
+
+sudo bundle install
+
+jasmine init
+rake jasmine
+
+# Then in a new terminal
+
+cd jasmine-demo
+ruby -rubygems server.rb
+
+# You can also run all your jasmine specs using selenium with this command:
+
+rake jasmine:ci
